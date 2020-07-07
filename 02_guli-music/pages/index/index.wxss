@@ -1,0 +1,103 @@
+.indexContainer {
+  height: 100%;
+}
+/* 轮播 */
+.navSwiper {
+  width: 100%;
+  height: 300rpx;
+}
+.navSwiper image {
+  width: 100%;
+  height: 100%;
+}
+/* 导航 */
+.navContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.navContainer .navItem {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navItem .iconfont {
+  width: 100rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 50%;
+  background-color: rgb(240, 19, 19);
+  font-size: 50rpx;
+  text-align: center;
+  color: #fff;
+  margin: 20rpx 0;
+}
+.navItem text {
+  font-size: 26rpx;
+}
+/* 推荐 */
+.recommandContainer {
+  padding: 40rpx 20rpx;
+}
+
+.scrollContainer {
+  display: flex;
+  margin-top: 20rpx;
+  height: 300rpx;
+}
+.scrollContainer .scrollItem {
+  width: 200rpx;
+  margin-right: 20rpx;
+}
+.scrollContainer .scrollItem image {
+  display: block;
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 20rpx;
+}
+.scrollContainer .scrollItem text {
+  font-size: 28rpx;
+  /* 单行文本溢出*/
+  /* display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+  /* 多行文本溢出 */
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+/* 排行榜 */
+.topList {
+  padding: 0 20rpx;
+}
+
+.topList .topListSwiper {
+  height: 460rpx;
+}
+
+.topList .swiperContent {
+  background: #fbfbfb;
+  width: 96%;
+}
+.swiperContent .title {
+  font-size: 30rpx;
+}
+.topList .musicContent {
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+}
+.topList .musicContent image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 10rpx;
+}
+
+.topList .musicContent .count {
+  margin: 0 40rpx;
+  font-weight: bold;
+}

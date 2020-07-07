@@ -1,0 +1,8 @@
+<view class="indexContianer">
+  <image  class="avatarUrl" src="{{userInfo.avatarUrl}}" wx:if='{{userInfo.avatarUrl}}'></image>
+  <button wx:else open-type="getUserInfo" bindgetuserinfo='handleGetUserInfo'>获取个人信息</button>
+  <text class="userName" >{{userInfo.nickName}}</text>
+  <view  class="goStudy" catchtap="goLog">
+    <text>欢迎来到小程序</text>
+  </view>
+</view>
